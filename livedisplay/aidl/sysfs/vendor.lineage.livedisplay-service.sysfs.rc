@@ -19,7 +19,7 @@ on set-lineage-sysfs-perms
     chown system system /sys/devices/virtual/graphics/fb0/color_enhance
     chown system system /sys/devices/virtual/graphics/fb0/reading_mode
 
-service vendor.livedisplay-sysfs /vendor/bin/hw/vendor.lineage.livedisplay-service.sysfs
+service vendor.livedisplay-sysfs /vendor/bin/hw/vendor.strix.livedisplay-service.sysfs
     class hal
     user system
     group system

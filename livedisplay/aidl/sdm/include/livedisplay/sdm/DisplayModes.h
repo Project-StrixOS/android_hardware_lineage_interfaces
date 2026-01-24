@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/livedisplay/BnDisplayModes.h>
+#include <aidl/vendor/strix/livedisplay/BnDisplayModes.h>
 #include <android-base/macros.h>
 
 #include <functional>
@@ -14,7 +14,7 @@
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sdm {
 
@@ -25,7 +25,7 @@ class DisplayModes : public BnDisplayModes {
     using DisplayModeSetCallback = std::function<void()>;
     void registerDisplayModeSetCallback(DisplayModeSetCallback callback);
 
-    // Methods from ::aidl::vendor::lineage::livedisplay::BnDisplayModes follow.
+    // Methods from ::aidl::vendor::strix::livedisplay::BnDisplayModes follow.
     ndk::ScopedAStatus getDisplayModes(std::vector<DisplayMode>* _aidl_return) override;
     ndk::ScopedAStatus getCurrentDisplayMode(DisplayMode* _aidl_return) override;
     ndk::ScopedAStatus getDefaultDisplayMode(DisplayMode* _aidl_return) override;
@@ -47,6 +47,6 @@ class DisplayModes : public BnDisplayModes {
 
 }  // namespace sdm
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

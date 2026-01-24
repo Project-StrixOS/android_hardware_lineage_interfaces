@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-module: "vendor.lineage.ir.IrProperties"
+module: "vendor.strix.ir.IrProperties"
 owner: Vendor
 
 # carrier_freqs ranges (default: 30000,60000)

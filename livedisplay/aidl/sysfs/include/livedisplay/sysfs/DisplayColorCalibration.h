@@ -5,20 +5,20 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/livedisplay/BnDisplayColorCalibration.h>
+#include <aidl/vendor/strix/livedisplay/BnDisplayColorCalibration.h>
 
 #include <livedisplay/sysfs/DualStateMode.h>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sysfs {
 
 class DisplayColorCalibration : public BnDisplayColorCalibration,
                                 public PathManager<DisplayColorCalibration> {
   public:
-    // Methods from ::aidl::vendor::lineage::livedisplay::BnDisplayColorCalibration follow.
+    // Methods from ::aidl::vendor::strix::livedisplay::BnDisplayColorCalibration follow.
     ndk::ScopedAStatus getMaxValue(int32_t* _aidl_return) override;
     ndk::ScopedAStatus getMinValue(int32_t* _aidl_return) override;
     ndk::ScopedAStatus getCalibration(std::vector<int32_t>* _aidl_return) override;
@@ -33,6 +33,6 @@ struct ModeTrait<DisplayColorCalibration> {
 
 }  // namespace sysfs
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

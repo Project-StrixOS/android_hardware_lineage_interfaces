@@ -4,8 +4,8 @@
 //
 
 vintf_compatibility_matrix {
-    name: "framework_compatibility_matrix.lineage.xml",
-    stem: "compatibility_matrix.lineage.xml",
+    name: "framework_compatibility_matrix.los.xml",
+    stem: "compatibility_matrix.los.xml",
     srcs: [
         "compatibility_matrix.lineage.xml",
     ],

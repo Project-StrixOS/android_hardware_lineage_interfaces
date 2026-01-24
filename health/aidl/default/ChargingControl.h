@@ -6,16 +6,16 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/health/BnChargingControl.h>
-#include <aidl/vendor/lineage/health/ChargingControlSupportedMode.h>
-#include <aidl/vendor/lineage/health/ChargingLimitInfo.h>
+#include <aidl/vendor/strix/health/BnChargingControl.h>
+#include <aidl/vendor/strix/health/ChargingControlSupportedMode.h>
+#include <aidl/vendor/strix/health/ChargingLimitInfo.h>
 #include <android/binder_auto_utils.h>
 #include <android/binder_status.h>
 #include <string>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace health {
 
 struct ChargingEnabledNode {

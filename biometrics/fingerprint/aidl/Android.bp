@@ -6,17 +6,17 @@
 //
 
 soong_config_module_type {
-    name: "lineage_hardware_biometrics_config_default",
+    name: "strix_hardware_biometrics_config_default",
     module_type: "cc_defaults",
-    config_namespace: "lineage_hardware_biometrics",
+    config_namespace: "strix.hardware.biometrics",
     bool_variables: [
         "run_32bit",
     ],
     properties: ["compile_multilib"],
 }
 
-lineage_hardware_biometrics_config_default {
-    name: "lineage_hardware_biometrics_config_default",
+strix_hardware_biometrics_config_default {
+    name: "strix_hardware_biometrics_config_default",
 
     soong_config_variables: {
         run_32bit: {
@@ -30,7 +30,7 @@ lineage_hardware_biometrics_config_default {
 
 cc_binary {
     name: "android.hardware.biometrics.fingerprint-service.lineage",
-    defaults: ["lineage_hardware_biometrics_config_default"],
+    defaults: ["strix_hardware_biometrics_config_default"],
     relative_install_path: "hw",
     init_rc: ["android.hardware.biometrics.fingerprint-service.lineage.rc"],
     vintf_fragments: ["android.hardware.biometrics.fingerprint-service.lineage.xml"],

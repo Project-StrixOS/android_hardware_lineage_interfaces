@@ -6,11 +6,11 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/health/BnFastCharge.h>
+#include <aidl/vendor/strix/health/BnFastCharge.h>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace health {
 
 class FastChargeConfig {
@@ -71,6 +71,6 @@ class FastCharge : public BnFastCharge {
 };
 
 }  // namespace health
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

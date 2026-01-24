@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.powershare-service.default"
+#define LOG_TAG "vendor.strix.powershare-service.default"
 
 #include "PowerShare.h"
 
@@ -17,7 +17,7 @@ using ::android::base::WriteStringToFile;
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace powershare {
 
 ndk::ScopedAStatus PowerShare::isEnabled(bool* _aidl_return) {

@@ -4,7 +4,7 @@
 //
 
 cc_binary {
-    name: "vendor.lineage.powershare-service.default",
+    name: "vendor.strix.powershare-service.default",
     vintf_fragments: ["vendor.lineage.powershare-service.default.xml"],
     init_rc: ["vendor.lineage.powershare-service.default.rc"],
     relative_install_path: "hw",
@@ -28,6 +28,6 @@ cc_binary {
         "liblog",
         "libbinder_ndk",
         "libutils",
-        "vendor.lineage.powershare-V1-ndk",
+        "vendor.strix.powershare-V1-ndk",
     ],
 }

@@ -54,7 +54,7 @@ cc_binary {
 }
 
 cc_binary {
-    name: "vendor.lineage.health-service.default",
+    name: "vendor.strix.health-service.default",
     vendor: true,
     relative_install_path: "hw",
     init_rc: ["vendor.lineage.health-service.default.rc"],
@@ -114,6 +114,6 @@ cc_binary {
     shared_libs: [
         "libbase",
         "libbinder_ndk",
-        "vendor.lineage.health-V2-ndk",
+        "vendor.strix.health-V2-ndk",
     ],
 }

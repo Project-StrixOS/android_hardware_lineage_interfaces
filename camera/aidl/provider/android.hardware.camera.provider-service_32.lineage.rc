@@ -1,4 +1,4 @@
-service vendor.camera.provider /vendor/bin/hw/android.hardware.camera.provider-service_32.lineage
+service vendor.camera.provider /vendor/bin/hw/android.hardware.camera.provider-service_32.strix
     interface aidl android.hardware.camera.provider.ICameraProvider/internal/0
     class hal
     user cameraserver
