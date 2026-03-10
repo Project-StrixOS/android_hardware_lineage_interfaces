@@ -5,8 +5,8 @@
 
 cc_binary {
     name: "vendor.strix.powershare-service.default",
-    vintf_fragments: ["vendor.lineage.powershare-service.default.xml"],
-    init_rc: ["vendor.lineage.powershare-service.default.rc"],
+    vintf_fragments: ["vendor.strix.powershare-service.default.xml"],
+    init_rc: ["vendor.strix.powershare-service.default.rc"],
     relative_install_path: "hw",
     vendor: true,
     cflags: select(soong_config_variable("lineage_powershare", "powershare_path"), {
