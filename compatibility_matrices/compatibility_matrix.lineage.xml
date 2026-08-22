@@ -5,7 +5,7 @@
 <compatibility-matrix version="2.0" type="framework">
     <!-- Radio Config (backend) -->
     <hal format="hidl" optional="true">
-        <name>lineage.hardware.radio.config</name>
+        <name>strix.hardware.radio.config</name>
         <version>1.0-1</version>
         <interface>
             <name>IRadioConfig</name>
@@ -14,7 +14,7 @@
     </hal>
     <!-- Charging -->
     <hal format="aidl" optional="true">
-        <name>vendor.lineage.health</name>
+        <name>vendor.strix.health</name>
         <version>1-2</version>
         <interface>
             <name>IChargingControl</name>
@@ -26,7 +26,7 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.lineage.powershare</name>
+        <name>vendor.strix.powershare</name>
         <version>1</version>
         <interface>
             <name>IPowerShare</name>
@@ -35,7 +35,7 @@
     </hal>
     <!-- Display -->
     <hal format="aidl" optional="true">
-        <name>vendor.lineage.livedisplay</name>
+        <name>vendor.strix.livedisplay</name>
         <version>1</version>
         <interface>
             <name>IAdaptiveBacklight</name>
@@ -80,7 +80,7 @@
     </hal>
     <!-- Touch -->
     <hal format="aidl" optional="true">
-        <name>vendor.lineage.touch</name>
+        <name>vendor.strix.touch</name>
         <version>1</version>
         <interface>
             <name>IGloveMode</name>

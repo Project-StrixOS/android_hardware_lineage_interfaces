@@ -4,21 +4,21 @@
  */
 
 filegroup {
-    name: "vendor.lineage.livedisplay-sdm-dm",
+    name: "vendor.strix.livedisplay-sdm-dm",
     srcs: [
         "DisplayModes.cpp",
     ],
 }
 
 filegroup {
-    name: "vendor.lineage.livedisplay-sdm-pa",
+    name: "vendor.strix.livedisplay-sdm-pa",
     srcs: [
         "PictureAdjustment.cpp",
     ],
 }
 
 filegroup {
-    name: "vendor.lineage.livedisplay-sdm-utils",
+    name: "vendor.strix.livedisplay-sdm-utils",
     srcs: [
         "SDMController.cpp",
         "Utils.cpp",
@@ -26,13 +26,13 @@ filegroup {
 }
 
 cc_library_headers {
-    name: "vendor.lineage.livedisplay-sdm-headers",
+    name: "vendor.strix.livedisplay-sdm-headers",
     vendor_available: true,
     export_include_dirs: ["include"],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay-service.sdm",
+    name: "vendor.strix.livedisplay-service.sdm",
     vendor: true,
     relative_install_path: "hw",
     init_rc: ["vendor.lineage.livedisplay-service.sdm.rc"],
@@ -51,9 +51,9 @@ cc_binary {
         default: ["-DENABLE_PA=true"],
     }),
     srcs: [
-        ":vendor.lineage.livedisplay-sdm-dm",
-        ":vendor.lineage.livedisplay-sdm-pa",
-        ":vendor.lineage.livedisplay-sdm-utils",
+        ":vendor.strix.livedisplay-sdm-dm",
+        ":vendor.strix.livedisplay-sdm-pa",
+        ":vendor.strix.livedisplay-sdm-utils",
         "service.cpp",
     ],
     shared_libs: [
@@ -61,9 +61,9 @@ cc_binary {
         "libbinder",
         "libbinder_ndk",
         "libutils",
-        "vendor.lineage.livedisplay-V1-ndk",
+        "vendor.strix.livedisplay-V1-ndk",
     ],
     header_libs: [
-        "vendor.lineage.livedisplay-sdm-headers",
+        "vendor.strix.livedisplay-sdm-headers",
     ],
 }

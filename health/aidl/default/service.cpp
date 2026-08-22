@@ -11,8 +11,8 @@
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 
-using ::aidl::vendor::lineage::health::ChargingControl;
-using ::aidl::vendor::lineage::health::FastCharge;
+using ::aidl::vendor::strix::health::ChargingControl;
+using ::aidl::vendor::strix::health::FastCharge;
 
 int main() {
     ABinderProcess_setThreadPoolMaxThreadCount(0);

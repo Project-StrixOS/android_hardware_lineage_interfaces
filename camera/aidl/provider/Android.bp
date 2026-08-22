@@ -5,7 +5,7 @@
 //
 
 cc_defaults {
-    name: "camera_service_aidl_defaults.lineage",
+    name: "camera_service_aidl_defaults.strix",
     vintf_fragments: ["android.hardware.camera.provider-service.lineage.xml"],
     vendor: true,
     relative_install_path: "hw",
@@ -17,7 +17,7 @@ cc_defaults {
         "android.hardware.camera.common-V1-ndk",
         "android.hardware.camera.device-V1-ndk",
         "android.hardware.camera.provider-V1-ndk",
-        "camera.device-impl.lineage",
+        "camera.device-impl.strix",
         "libbase",
         "libbinder_ndk",
         "libcamera_metadata",
@@ -35,14 +35,14 @@ cc_defaults {
 }
 
 cc_binary {
-    name: "android.hardware.camera.provider-service_32.lineage",
-    defaults: ["camera_service_aidl_defaults.lineage"],
+    name: "android.hardware.camera.provider-service_32.strix",
+    defaults: ["camera_service_aidl_defaults.strix"],
     compile_multilib: "32",
     init_rc: ["android.hardware.camera.provider-service_32.lineage.rc"],
 }
 
 cc_binary {
-    name: "android.hardware.camera.provider-service.lineage",
-    defaults: ["camera_service_aidl_defaults.lineage"],
+    name: "android.hardware.camera.provider-service.strix",
+    defaults: ["camera_service_aidl_defaults.strix"],
     init_rc: ["android.hardware.camera.provider-service.lineage.rc"],
 }

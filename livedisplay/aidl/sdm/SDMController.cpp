@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay-impl-sdm"
+#define LOG_TAG "vendor.strix.livedisplay-impl-sdm"
 
 #include "livedisplay/sdm/SDMController.h"
 
@@ -66,7 +66,7 @@ Function LoadFunction(void* handle, const char* name) {
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sdm {
 
@@ -155,6 +155,6 @@ status_t SDMController::getFeatureVersion(uint32_t feature_id, SdmFeatureVersion
 
 }  // namespace sdm
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

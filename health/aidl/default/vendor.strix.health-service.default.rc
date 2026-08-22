@@ -1,0 +1,4 @@
+service vendor.strix_health /vendor/bin/hw/vendor.strix.health-service.default
+    class hal
+    user system
+    group system

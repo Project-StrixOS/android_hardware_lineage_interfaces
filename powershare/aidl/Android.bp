@@ -4,8 +4,8 @@
 //
 
 aidl_interface {
-    name: "vendor.lineage.powershare",
-    srcs: ["vendor/lineage/powershare/*.aidl"],
+    name: "vendor.strix.powershare",
+    srcs: ["vendor/strix/powershare/*.aidl"],
     stability: "vintf",
     vendor_available: true,
 

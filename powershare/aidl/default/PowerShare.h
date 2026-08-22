@@ -5,11 +5,11 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/powershare/BnPowerShare.h>
+#include <aidl/vendor/strix/powershare/BnPowerShare.h>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace powershare {
 
 class PowerShare : public BnPowerShare {
