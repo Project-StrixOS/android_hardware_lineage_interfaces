@@ -9,7 +9,7 @@
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 
-using aidl::vendor::lineage::powershare::PowerShare;
+using aidl::vendor::strix::powershare::PowerShare;
 
 int main() {
     ABinderProcess_setThreadPoolMaxThreadCount(0);

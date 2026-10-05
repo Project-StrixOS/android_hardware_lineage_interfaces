@@ -17,10 +17,10 @@
 #ifndef LINEAGE_FRAMEWORKS_DISPLAYSERVICE_V1_0_DISPLAYSERVICE_H
 #define LINEAGE_FRAMEWORKS_DISPLAYSERVICE_V1_0_DISPLAYSERVICE_H
 
-#include <lineage/frameworks/displayservice/1.0/IDisplayService.h>
+#include <strix/frameworks/displayservice/1.0/IDisplayService.h>
 #include <hidl/Status.h>
 
-namespace lineage {
+namespace strix {
 namespace frameworks {
 namespace displayservice {
 namespace V1_0 {
@@ -38,6 +38,6 @@ struct DisplayService : public IDisplayService {
 }  // namespace V1_0
 }  // namespace displayservice
 }  // namespace frameworks
-}  // namespace lineage
+}  // namespace strix
 
 #endif  // LINEAGE_FRAMEWORKS_DISPLAYSERVICE_V1_0_DISPLAYSERVICE_H

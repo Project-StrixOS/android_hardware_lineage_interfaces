@@ -4,11 +4,11 @@
  */
 
 aidl_interface {
-    name: "vendor.lineage.touch",
+    name: "vendor.strix.touch",
     vendor_available: true,
-    srcs: ["vendor/lineage/touch/*.aidl"],
+    srcs: ["vendor/strix/touch/*.aidl"],
     stability: "vintf",
-    owner: "lineage",
+    owner: "strix",
 
     backend: {
         cpp: {

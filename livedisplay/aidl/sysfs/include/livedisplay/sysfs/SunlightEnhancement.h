@@ -5,11 +5,11 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/livedisplay/BnSunlightEnhancement.h>
+#include <aidl/vendor/strix/livedisplay/BnSunlightEnhancement.h>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sysfs {
 
@@ -17,7 +17,7 @@ class SunlightEnhancement : public BnSunlightEnhancement {
   public:
     SunlightEnhancement();
 
-    // Methods from ::aidl::vendor::lineage::livedisplay::BnSunlightEnhancement follow.
+    // Methods from ::aidl::vendor::strix::livedisplay::BnSunlightEnhancement follow.
     ndk::ScopedAStatus getEnabled(bool* _aidl_return) override;
     ndk::ScopedAStatus setEnabled(bool enabled) override;
 
@@ -36,6 +36,6 @@ class SunlightEnhancement : public BnSunlightEnhancement {
 
 }  // namespace sysfs
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

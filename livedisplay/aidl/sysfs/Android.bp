@@ -4,50 +4,50 @@
 //
 
 filegroup {
-    name: "vendor.lineage.livedisplay-sysfs-dcc",
+    name: "vendor.strix.livedisplay-sysfs-dcc",
     srcs: [
         "DisplayColorCalibration.cpp",
     ],
 }
 
 filegroup {
-    name: "vendor.lineage.livedisplay-sysfs-se",
+    name: "vendor.strix.livedisplay-sysfs-se",
     srcs: [
         "SunlightEnhancement.cpp",
     ],
 }
 
 cc_library_headers {
-    name: "vendor.lineage.livedisplay-sysfs-headers",
+    name: "vendor.strix.livedisplay-sysfs-headers",
     vendor_available: true,
     export_include_dirs: ["include"],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay-service.sysfs",
+    name: "vendor.strix.livedisplay-service.sysfs",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["vendor.lineage.livedisplay-service.sysfs.rc"],
+    init_rc: ["vendor.strix.livedisplay-service.sysfs.rc"],
     vintf_fragments: select(soong_config_variable("livedisplay_sysfs", "enable_ab"), {
-        true: ["vendor.lineage.livedisplay-service.sysfs-ab.xml"],
+        true: ["vendor.strix.livedisplay-service.sysfs-ab.xml"],
         default: [],
     }) + select(soong_config_variable("livedisplay_sysfs", "enable_ac"), {
-        true: ["vendor.lineage.livedisplay-service.sysfs-ac.xml"],
+        true: ["vendor.strix.livedisplay-service.sysfs-ac.xml"],
         default: [],
     }) + select(soong_config_variable("livedisplay_sysfs", "enable_af"), {
-        true: ["vendor.lineage.livedisplay-service.sysfs-af.xml"],
+        true: ["vendor.strix.livedisplay-service.sysfs-af.xml"],
         default: [],
     }) + select(soong_config_variable("livedisplay_sysfs", "enable_ce"), {
-        true: ["vendor.lineage.livedisplay-service.sysfs-ce.xml"],
+        true: ["vendor.strix.livedisplay-service.sysfs-ce.xml"],
         default: [],
     }) + select(soong_config_variable("livedisplay_sysfs", "enable_dcc"), {
-        true: ["vendor.lineage.livedisplay-service.sysfs-dcc.xml"],
+        true: ["vendor.strix.livedisplay-service.sysfs-dcc.xml"],
         default: [],
     }) + select(soong_config_variable("livedisplay_sysfs", "enable_re"), {
-        true: ["vendor.lineage.livedisplay-service.sysfs-re.xml"],
+        true: ["vendor.strix.livedisplay-service.sysfs-re.xml"],
         default: [],
     }) + select(soong_config_variable("livedisplay_sysfs", "enable_se"), {
-        true: ["vendor.lineage.livedisplay-service.sysfs-se.xml"],
+        true: ["vendor.strix.livedisplay-service.sysfs-se.xml"],
         default: [],
     }),
     cflags: select(soong_config_variable("livedisplay_sysfs", "enable_ab"), {
@@ -79,17 +79,17 @@ cc_binary {
         default: [],
     }),
     srcs: [
-        ":vendor.lineage.livedisplay-sysfs-dcc",
-        ":vendor.lineage.livedisplay-sysfs-se",
+        ":vendor.strix.livedisplay-sysfs-dcc",
+        ":vendor.strix.livedisplay-sysfs-se",
         "service.cpp",
     ],
     shared_libs: [
         "libbase",
         "libbinder_ndk",
         "libutils",
-        "vendor.lineage.livedisplay-V1-ndk",
+        "vendor.strix.livedisplay-V1-ndk",
     ],
     header_libs: [
-        "vendor.lineage.livedisplay-sysfs-headers",
+        "vendor.strix.livedisplay-sysfs-headers",
     ],
 }

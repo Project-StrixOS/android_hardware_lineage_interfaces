@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay-impl-sdm"
+#define LOG_TAG "vendor.strix.livedisplay-impl-sdm"
 
 #include "livedisplay/sdm/PictureAdjustment.h"
 #include "livedisplay/sdm/Utils.h"
@@ -12,7 +12,7 @@
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sdm {
 
@@ -56,7 +56,7 @@ void PictureAdjustment::updateDefaultPictureAdjustment() {
     }
 }
 
-// Methods from ::aidl::vendor::lineage::livedisplay::BnPictureAdjustment follow.
+// Methods from ::aidl::vendor::strix::livedisplay::BnPictureAdjustment follow.
 ndk::ScopedAStatus PictureAdjustment::getHueRange(FloatRange* _aidl_return) {
     HsicRanges r{};
     if (controller_->getGlobalPaRange(&r) != OK) {
@@ -159,6 +159,6 @@ ndk::ScopedAStatus PictureAdjustment::setPictureAdjustment(const HSIC& hsic) {
 
 }  // namespace sdm
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

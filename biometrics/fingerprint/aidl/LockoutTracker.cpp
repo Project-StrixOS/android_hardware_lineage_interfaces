@@ -10,7 +10,7 @@
 #include <util/Util.h>
 #include "Fingerprint.h"
 
-using namespace ::android::fingerprint::lineage;
+using namespace ::android::fingerprint::strix;
 
 namespace aidl::android::hardware::biometrics::fingerprint {
 

@@ -17,7 +17,7 @@
 #ifndef LINEAGE_FRAMEWORKS_DISPLAYSERVICE_V1_0_DISPLAYEVENTRECEIVER_H
 #define LINEAGE_FRAMEWORKS_DISPLAYSERVICE_V1_0_DISPLAYEVENTRECEIVER_H
 
-#include <lineage/frameworks/displayservice/1.0/IDisplayEventReceiver.h>
+#include <strix/frameworks/displayservice/1.0/IDisplayEventReceiver.h>
 #include <gui/DisplayEventReceiver.h>
 #include <hidl/Status.h>
 #include <gui/DisplayEventReceiver.h>
@@ -25,7 +25,7 @@
 
 #include <mutex>
 
-namespace lineage {
+namespace strix {
 namespace frameworks {
 namespace displayservice {
 namespace V1_0 {
@@ -69,6 +69,6 @@ private:
 }  // namespace V1_0
 }  // namespace displayservice
 }  // namespace frameworks
-}  // namespace lineage
+}  // namespace strix
 
 #endif  // LINEAGE_FRAMEWORKS_DISPLAYSERVICE_V1_0_DISPLAYEVENTRECEIVER_H

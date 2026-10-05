@@ -2,13 +2,13 @@
 # pre-existing interfaces will fail VTS and break framework-only OTAs
 
 # Framework HALs released in Android O MR1
-4387260592038b97d0316dca83806eeda71153bd4db0825a8022b17eff8aa1b7 lineage.frameworks.displayservice@1.0::types
-ac2e2f3c366dc8ecbd4733fedee1cbeaa5e134c230a588e0c8e3b2dbe109395e lineage.frameworks.displayservice@1.0::IDisplayEventReceiver
-7e82ad0e68005c15be6b94247e4b240a978baa84f17fb10f0823c95d6bf546dc lineage.frameworks.displayservice@1.0::IDisplayService
-1897060d0d9d9f60c45e3ef57ae50ff3e2ce26474c6c217d7ff65e2ecfa3091f lineage.frameworks.displayservice@1.0::IEventCallback
+e1c9349d5ef860dc5c134055ab06fcea0fd536e2c4f9148fc08c58fa898cc464 strix.frameworks.displayservice@1.0::types
+5e51ad7c6883948cfa45497bb6dae662338267e1729daf6ab45539ed842af38f strix.frameworks.displayservice@1.0::IDisplayEventReceiver
+eaae9f09ee4f0c8dd748b3f97fed8d90126946080ed0cb8e3a35c30e33b2dcb3 strix.frameworks.displayservice@1.0::IDisplayService
+422fcfda4901837f73bc870df7b62a4ebacfcb3a4f076f727e71a0367799e699 strix.frameworks.displayservice@1.0::IEventCallback
 
 # Framework HALs released in Android Q
-b323527e78f6e1ff7d58021f8c9ce25455936a76a42499cb6bc67735d1470229 lineage.frameworks.stats@1.0::types
-e3effc24085b8eabdcd468b1cad2ff38d49ffd1b05fa4cce3d3491be672741bb lineage.frameworks.stats@1.0::IStats
+f8628712dd9e5ca3ac613025345c8beb92b50cd2a59e11522f95c33a3adf1235 strix.frameworks.stats@1.0::types
+5f06486b30a096e99a03847e4fd8fbe861fc004646bf12921a8c8e48dfec45a4 strix.frameworks.stats@1.0::IStats
 
 # There should be no more HIDL HALs - please use AIDL instead.

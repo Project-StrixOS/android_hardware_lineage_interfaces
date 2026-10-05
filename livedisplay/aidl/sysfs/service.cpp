@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay-service-sysfs"
+#define LOG_TAG "vendor.strix.livedisplay-service-sysfs"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>
@@ -13,13 +13,13 @@
 #include <livedisplay/sysfs/DualStateMode.h>
 #include <livedisplay/sysfs/SunlightEnhancement.h>
 
-using ::aidl::vendor::lineage::livedisplay::sysfs::AdaptiveBacklight;
-using ::aidl::vendor::lineage::livedisplay::sysfs::AntiFlicker;
-using ::aidl::vendor::lineage::livedisplay::sysfs::AutoContrast;
-using ::aidl::vendor::lineage::livedisplay::sysfs::ColorEnhancement;
-using ::aidl::vendor::lineage::livedisplay::sysfs::DisplayColorCalibration;
-using ::aidl::vendor::lineage::livedisplay::sysfs::ReadingEnhancement;
-using ::aidl::vendor::lineage::livedisplay::sysfs::SunlightEnhancement;
+using ::aidl::vendor::strix::livedisplay::sysfs::AdaptiveBacklight;
+using ::aidl::vendor::strix::livedisplay::sysfs::AntiFlicker;
+using ::aidl::vendor::strix::livedisplay::sysfs::AutoContrast;
+using ::aidl::vendor::strix::livedisplay::sysfs::ColorEnhancement;
+using ::aidl::vendor::strix::livedisplay::sysfs::DisplayColorCalibration;
+using ::aidl::vendor::strix::livedisplay::sysfs::ReadingEnhancement;
+using ::aidl::vendor::strix::livedisplay::sysfs::SunlightEnhancement;
 
 int main() {
     ABinderProcess_setThreadPoolMaxThreadCount(0);

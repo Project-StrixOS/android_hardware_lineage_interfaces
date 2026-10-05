@@ -11,7 +11,7 @@
 #include <filesystem>
 #include <light.sysprop.h>
 
-using namespace ::vendor::lineage::light;
+using namespace ::vendor::strix::light;
 
 namespace aidl {
 namespace android {

@@ -3,6 +3,6 @@ package {
 }
 
 hidl_package_root {
-    name: "lineage.frameworks",
+    name: "strix.frameworks",
     path: "hardware/lineage/interfaces/_frameworks",
 }

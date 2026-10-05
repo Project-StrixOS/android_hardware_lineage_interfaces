@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-module: "vendor.lineage.light.LightProperties"
+module: "vendor.strix.light.LightProperties"
 owner: Vendor
 
 prop {

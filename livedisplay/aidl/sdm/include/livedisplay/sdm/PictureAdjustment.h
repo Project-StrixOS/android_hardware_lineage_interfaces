@@ -5,14 +5,14 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/livedisplay/BnPictureAdjustment.h>
+#include <aidl/vendor/strix/livedisplay/BnPictureAdjustment.h>
 #include <android-base/macros.h>
 
 #include "SDMController.h"
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sdm {
 
@@ -22,7 +22,7 @@ class PictureAdjustment : public BnPictureAdjustment {
 
     void updateDefaultPictureAdjustment();
 
-    // Methods from ::aidl::vendor::lineage::livedisplay::BnPictureAdjustment follow.
+    // Methods from ::aidl::vendor::strix::livedisplay::BnPictureAdjustment follow.
     ndk::ScopedAStatus getHueRange(FloatRange* _aidl_return) override;
     ndk::ScopedAStatus getSaturationRange(FloatRange* _aidl_return) override;
     ndk::ScopedAStatus getIntensityRange(FloatRange* _aidl_return) override;
@@ -44,6 +44,6 @@ class PictureAdjustment : public BnPictureAdjustment {
 
 }  // namespace sdm
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

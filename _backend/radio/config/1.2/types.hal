@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package lineage.hardware.radio.config@1.2;
+package strix.hardware.radio.config@1.2;
 
 import android.hardware.radio@1.0::CardState;
 import @1.0::SimSlotStatus;

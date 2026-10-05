@@ -17,7 +17,7 @@
 #include <displayservice/DisplayService.h>
 #include <displayservice/DisplayEventReceiver.h>
 
-namespace lineage {
+namespace strix {
 namespace frameworks {
 namespace displayservice {
 namespace V1_0 {
@@ -33,4 +33,4 @@ Return<sp<IDisplayEventReceiver>> DisplayService::getEventReceiver() {
 }  // namespace V1_0
 }  // namespace displayservice
 }  // namespace frameworks
-}  // namespace lineage
+}  // namespace strix

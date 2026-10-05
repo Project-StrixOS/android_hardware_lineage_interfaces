@@ -15,7 +15,7 @@
 
 #include "ConsumerIr.h"
 
-using namespace ::vendor::lineage::ir;
+using namespace ::vendor::strix::ir;
 
 namespace aidl {
 namespace android {

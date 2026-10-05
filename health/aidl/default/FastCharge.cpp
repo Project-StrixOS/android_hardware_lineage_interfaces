@@ -11,11 +11,11 @@
 #include <android-base/strings.h>
 #include <map>
 
-#define LOG_TAG "vendor.lineage.health-service.default"
+#define LOG_TAG "vendor.strix.health-service.default"
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace health {
 
 ndk::ScopedAStatus FastCharge::getSupportedFastChargeModes(int64_t* _aidl_return) {
@@ -78,6 +78,6 @@ binder_status_t FastCharge::dump(int fd, const char** args, uint32_t numArgs) {
 }
 
 }  // namespace health
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay-impl-sdm"
+#define LOG_TAG "vendor.strix.livedisplay-impl-sdm"
 
 #include "livedisplay/sdm/DisplayModes.h"
 #include "livedisplay/sdm/Utils.h"
@@ -12,7 +12,7 @@
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sdm {
 
@@ -89,7 +89,7 @@ std::optional<DisplayMode> DisplayModes::getDefaultDisplayModeInternal() {
     return {};
 }
 
-// Methods from ::aidl::vendor::lineage::livedisplay::BnDisplayModes follow.
+// Methods from ::aidl::vendor::strix::livedisplay::BnDisplayModes follow.
 ndk::ScopedAStatus DisplayModes::getDisplayModes(std::vector<DisplayMode>* _aidl_return) {
     *_aidl_return = getDisplayModesInternal();
     return ndk::ScopedAStatus::ok();
@@ -146,6 +146,6 @@ void DisplayModes::registerDisplayModeSetCallback(DisplayModeSetCallback callbac
 
 }  // namespace sdm
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

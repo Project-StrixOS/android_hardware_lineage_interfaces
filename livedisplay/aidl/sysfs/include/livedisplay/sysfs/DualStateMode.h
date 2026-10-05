@@ -5,11 +5,11 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/livedisplay/BnAdaptiveBacklight.h>
-#include <aidl/vendor/lineage/livedisplay/BnAntiFlicker.h>
-#include <aidl/vendor/lineage/livedisplay/BnAutoContrast.h>
-#include <aidl/vendor/lineage/livedisplay/BnColorEnhancement.h>
-#include <aidl/vendor/lineage/livedisplay/BnReadingEnhancement.h>
+#include <aidl/vendor/strix/livedisplay/BnAdaptiveBacklight.h>
+#include <aidl/vendor/strix/livedisplay/BnAntiFlicker.h>
+#include <aidl/vendor/strix/livedisplay/BnAutoContrast.h>
+#include <aidl/vendor/strix/livedisplay/BnColorEnhancement.h>
+#include <aidl/vendor/strix/livedisplay/BnReadingEnhancement.h>
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
@@ -21,7 +21,7 @@ using ::android::base::WriteStringToFile;
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sysfs {
 
@@ -97,6 +97,6 @@ DEFINE_DUAL_STATE_MODE(ReadingEnhancement, "/sys/class/graphics/fb0/reading_mode
 
 }  // namespace sysfs
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

@@ -5,11 +5,11 @@
  */
 
 aidl_interface {
-    name: "vendor.lineage.health",
+    name: "vendor.strix.health",
     vendor_available: true,
-    srcs: ["vendor/lineage/health/*.aidl"],
+    srcs: ["vendor/strix/health/*.aidl"],
     stability: "vintf",
-    owner: "lineage",
+    owner: "strix",
 
     backend: {
         cpp: {

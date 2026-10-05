@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package lineage.hardware.radio.config@1.1;
+package strix.hardware.radio.config@1.1;
 
 import @1.0::IRadioConfigIndication;
 

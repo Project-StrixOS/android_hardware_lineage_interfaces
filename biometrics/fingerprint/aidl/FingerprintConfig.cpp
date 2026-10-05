@@ -13,7 +13,7 @@
 
 #include <fingerprint.sysprop.h>
 
-using namespace ::android::fingerprint::lineage;
+using namespace ::android::fingerprint::strix;
 
 namespace aidl::android::hardware::biometrics::fingerprint {
 

@@ -4,16 +4,16 @@
 //
 
 cc_binary {
-    name: "android.hardware.light-service.lineage",
+    name: "android.hardware.light-service.strix",
     defaults: ["hidl_defaults"],
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["android.hardware.light-service.lineage.rc"],
-    vintf_fragments: ["android.hardware.light-service.lineage.xml"],
-    cflags: select(soong_config_variable("lineagelight", "scan_for_backlight_devices"), {
+    init_rc: ["android.hardware.light-service.strix.rc"],
+    vintf_fragments: ["android.hardware.light-service.strix.xml"],
+    cflags: select(soong_config_variable("strixlight", "scan_for_backlight_devices"), {
         true: ["-DSCAN_FOR_BACKLIGHT_DEVICES"],
         default: [],
-    }) + select(soong_config_variable("lineagelight", "snap_rgb_to_pure"), {
+    }) + select(soong_config_variable("strixlight", "snap_rgb_to_pure"), {
         true: ["-DSNAP_RGB_TO_PURE"],
         default: [],
     }),
@@ -35,12 +35,12 @@ cc_binary {
         "android.hardware.light-V2-ndk",
     ],
     static_libs: [
-        "libvendor.lineage.light.Props",
+        "libvendor.strix.light.Props",
     ],
 }
 
 sysprop_library {
-    name: "vendor.lineage.light.Props",
+    name: "vendor.strix.light.Props",
     srcs: ["light.sysprop"],
     property_owner: "Vendor",
     vendor: true,

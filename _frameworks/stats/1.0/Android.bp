@@ -5,8 +5,8 @@ package {
 }
 
 hidl_interface {
-    name: "lineage.frameworks.stats@1.0",
-    root: "lineage.frameworks",
+    name: "strix.frameworks.stats@1.0",
+    root: "strix.frameworks",
     srcs: [
         "types.hal",
         "IStats.hal",

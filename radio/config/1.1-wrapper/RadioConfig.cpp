@@ -41,8 +41,8 @@ using ::android::hardware::radio::V1_0::RadioResponseInfo;
 using ::android::hardware::radio::V1_0::RadioResponseType;
 
 RadioConfig::RadioConfig(
-        sp<::lineage::hardware::radio::config::V1_0::IRadioConfig> realRadioConfig,
-        sp<::lineage::hardware::radio::config::V1_1::IRadioConfig> realRadioConfigV1_1)
+        sp<::strix::hardware::radio::config::V1_0::IRadioConfig> realRadioConfig,
+        sp<::strix::hardware::radio::config::V1_1::IRadioConfig> realRadioConfigV1_1)
     : mRealRadioConfig(realRadioConfig), mRealRadioConfigV1_1(realRadioConfigV1_1) {
     android::base::SetLogger(android::base::LogdLogger(android::base::RADIO));
 }
@@ -68,10 +68,10 @@ Return<void> RadioConfig::setResponseFunctions(
 
     return realRadioConfig->setResponseFunctions(
             reinterpret_cast<
-                    const sp<::lineage::hardware::radio::config::V1_0::IRadioConfigResponse>&>(
+                    const sp<::strix::hardware::radio::config::V1_0::IRadioConfigResponse>&>(
                     radioConfigResponse),
             reinterpret_cast<
-                    const sp<::lineage::hardware::radio::config::V1_0::IRadioConfigIndication>&>(
+                    const sp<::strix::hardware::radio::config::V1_0::IRadioConfigIndication>&>(
                     radioConfigIndication));
 }
 
@@ -175,7 +175,7 @@ Return<void> RadioConfig::setModemsConfig(
     if (realRadioConfigV1_1 != nullptr) {
         return realRadioConfigV1_1->setModemsConfig(
                 serial,
-                reinterpret_cast<const ::lineage::hardware::radio::config::V1_1::ModemsConfig&>(
+                reinterpret_cast<const ::strix::hardware::radio::config::V1_1::ModemsConfig&>(
                         modemsConfig));
     }
 

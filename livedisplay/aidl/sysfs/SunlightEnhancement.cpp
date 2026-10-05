@@ -17,7 +17,7 @@ using ::android::base::WriteStringToFile;
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sysfs {
 
@@ -79,6 +79,6 @@ ndk::ScopedAStatus SunlightEnhancement::setEnabled(bool enabled) {
 
 }  // namespace sysfs
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

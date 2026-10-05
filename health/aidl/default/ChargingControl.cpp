@@ -11,11 +11,11 @@
 #include <android-base/strings.h>
 #include <fstream>
 
-#define LOG_TAG "vendor.lineage.health-service.default"
+#define LOG_TAG "vendor.strix.health-service.default"
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace health {
 
 #ifdef HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE
@@ -308,6 +308,6 @@ binder_status_t ChargingControl::dump(int fd, const char** /* args */, uint32_t 
 }
 
 }  // namespace health
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

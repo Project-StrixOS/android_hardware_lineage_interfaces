@@ -19,12 +19,12 @@
 #include <displayservice/DisplayEventReceiver.h>
 
 #include <android-base/logging.h>
-#include <lineage/frameworks/displayservice/1.0/BpHwEventCallback.h>
+#include <strix/frameworks/displayservice/1.0/BpHwEventCallback.h>
 
 #include <thread>
 #include <ftl/enum.h>
 
-namespace lineage {
+namespace strix {
 namespace frameworks {
 namespace displayservice {
 namespace V1_0 {
@@ -181,4 +181,4 @@ Return<Status> DisplayEventReceiver::close() {
 }  // namespace V1_0
 }  // namespace displayservice
 }  // namespace frameworks
-}  // namespace lineage
+}  // namespace strix

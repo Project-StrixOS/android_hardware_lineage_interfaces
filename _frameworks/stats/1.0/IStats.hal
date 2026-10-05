@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package lineage.frameworks.stats@1.0;
+package strix.frameworks.stats@1.0;
 
 /**
  * IStats is an interface that allows clients to report specific hardware

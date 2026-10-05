@@ -10,7 +10,7 @@
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace livedisplay {
 namespace sdm {
 namespace utils {
@@ -34,6 +34,6 @@ status_t CheckFeatureVersion(const std::shared_ptr<SDMController>& controller,
 }  // namespace utils
 }  // namespace sdm
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

@@ -24,13 +24,13 @@ using android::sp;
 using android::status_t;
 
 int main() {
-    sp<lineage::hardware::radio::config::V1_0::IRadioConfig> realRadioConfig =
-            lineage::hardware::radio::config::V1_0::IRadioConfig::getService();
+    sp<strix::hardware::radio::config::V1_0::IRadioConfig> realRadioConfig =
+            strix::hardware::radio::config::V1_0::IRadioConfig::getService();
     CHECK(realRadioConfig) << "Cannot get backend radio config V1.0 service.";
     linkDeathToDeath(realRadioConfig);
 
-    sp<lineage::hardware::radio::config::V1_1::IRadioConfig> realRadioConfigV1_1 =
-            lineage::hardware::radio::config::V1_1::IRadioConfig::getService();
+    sp<strix::hardware::radio::config::V1_1::IRadioConfig> realRadioConfigV1_1 =
+            strix::hardware::radio::config::V1_1::IRadioConfig::getService();
     if (realRadioConfigV1_1 == nullptr) {
         LOG(ERROR) << "Cannot get backend radio config V1.1 service (not fatal).";
     } else {

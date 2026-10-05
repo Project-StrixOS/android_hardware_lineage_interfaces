@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay-service.sdm"
+#define LOG_TAG "vendor.strix.livedisplay-service.sdm"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>
@@ -13,9 +13,9 @@
 #include <livedisplay/sdm/PictureAdjustment.h>
 #include <livedisplay/sdm/SDMController.h>
 
-using ::aidl::vendor::lineage::livedisplay::sdm::DisplayModes;
-using ::aidl::vendor::lineage::livedisplay::sdm::PictureAdjustment;
-using ::aidl::vendor::lineage::livedisplay::sdm::SDMController;
+using ::aidl::vendor::strix::livedisplay::sdm::DisplayModes;
+using ::aidl::vendor::strix::livedisplay::sdm::PictureAdjustment;
+using ::aidl::vendor::strix::livedisplay::sdm::SDMController;
 
 int main() {
     android::ProcessState::self()->setThreadPoolMaxThreadCount(1);

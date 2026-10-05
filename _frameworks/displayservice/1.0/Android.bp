@@ -5,8 +5,8 @@ package {
 }
 
 hidl_interface {
-    name: "lineage.frameworks.displayservice@1.0",
-    root: "lineage.frameworks",
+    name: "strix.frameworks.displayservice@1.0",
+    root: "strix.frameworks",
     srcs: [
         "types.hal",
         "IDisplayEventReceiver.hal",
@@ -20,9 +20,9 @@ hidl_interface {
 }
 
 prebuilt_etc_xml {
-    name: "lineage.frameworks.displayservice@1.0.xml",
-    owner: "lineage",
-    src: "lineage.frameworks.displayservice@1.0.xml",
+    name: "strix.frameworks.displayservice@1.0.xml",
+    owner: "strix",
+    src: "strix.frameworks.displayservice@1.0.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
 }

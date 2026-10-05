@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.camera.provider-service.lineage"
+#define LOG_TAG "android.hardware.camera.provider-service.strix"
 
 #include "CameraProvider.h"
 

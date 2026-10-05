@@ -22,7 +22,7 @@
  * serial to different methods), multiple responses (one for each method call) must still be served.
  */
 
-package lineage.hardware.radio.config@1.3;
+package strix.hardware.radio.config@1.3;
 
 import @1.1::IRadioConfig;
 import IRadioConfigResponse;
